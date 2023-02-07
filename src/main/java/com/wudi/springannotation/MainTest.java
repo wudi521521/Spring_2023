@@ -18,7 +18,11 @@ public class MainTest {
                 = new AnnotationConfigApplicationContext(MainConfig.class);
         Person person01 = (Person)annotationConfigApplicationContext.getBean("person01");
         System.out.println(person01);
-
+        //获取配置文件中的bean
+        String[] beanDefinitionNames = pathXmlApplicationContext.getBeanDefinitionNames();
+        for (int i = 0; i < beanDefinitionNames.length; i++) {
+            System.out.println(beanDefinitionNames[i]);
+        }
 
 
     }
