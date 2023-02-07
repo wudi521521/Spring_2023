@@ -19,6 +19,7 @@ public class MainConfig {
     //给容器中注册一个Bean，类型为返回值的类型，id默认是用方法名作为id
     @Bean("person01")
     public Person person(){
+        System.out.println("容器中添加Person-01");
         return new Person("li si",20);
     }
 }
