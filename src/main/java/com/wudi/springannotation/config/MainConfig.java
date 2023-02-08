@@ -1,10 +1,7 @@
 package com.wudi.springannotation.config;
 
 import com.wudi.springannotation.bean.Person;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
+import org.springframework.context.annotation.*;
 import org.springframework.stereotype.Controller;
 
 //配置类 == 配置文件
@@ -22,4 +19,5 @@ public class MainConfig {
         System.out.println("容器中添加Person-01");
         return new Person("li si",20);
     }
+
 }
