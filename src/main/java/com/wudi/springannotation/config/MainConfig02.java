@@ -1,5 +1,6 @@
 package com.wudi.springannotation.config;
 
+import com.wudi.springannotation.bean.ColorFactoryBean;
 import com.wudi.springannotation.bean.Person;
 import com.wudi.springannotation.bean.Red;
 import com.wudi.springannotation.condition.MacCondition;
@@ -42,5 +43,10 @@ public class MainConfig02 {
     public Person person04(){
         System.out.println("容器中添加person-04");
         return new Person("linu",32);
+    }
+
+    @Bean
+    public ColorFactoryBean colorFactoryBean(){
+        return new ColorFactoryBean();
     }
 }
