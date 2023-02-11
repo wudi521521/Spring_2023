@@ -25,10 +25,23 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <!--AOP 依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>4.3.12.RELEASE</version>
+        </dependency>
+        <!--Mysql 依赖(tx,jdbc)-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.3.12.RELEASE</version>
+        </dependency>
+        <!--Mysql 依赖 驱动-->
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
         </dependency>
     </dependencies>
 
